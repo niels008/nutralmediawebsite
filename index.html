@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- test -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sass/globalsvars.css" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="stylesheet" href="sass/menu.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/img/favicon/Tekengebied 1@1x.png"
+      sizes="16x16"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/img/favicon/Tekengebied 1@2x.png"
+      sizes="32x32"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/img/favicon/Tekengebied 1@3x.png"
+      sizes="48x48"
+    />
+    <title>Nutral</title>
+  </head>
+
+  <body>
+    <div class="menu-wrap">
+      <input id="menutoggle" type="checkbox" class="toggler" />
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a onclick="uncheck()" href="#hero">Home</a></li>
+              <li><a onclick="uncheck()" href="#cases">Cases</a></li>
+              <li><a onclick="uncheck()" href="#services">Services</a></li>
+              <li><a onclick="uncheck()" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="activeTitle">
+        <p id="activetitel">Current position</p>
+      </div> -->
+      <img src="/img/logo2.svg" alt="Logo nutral" class="sidebar_logo" />
+    </div>
+    <div id="#main" class="main">
+      <section id="hero" class="hero">
+        <header>
+          <img
+            data-delay=".1s"
+            data-duration=".5s"
+            class="logo anim"
+            src="/img/logo-top.svg"
+            alt="Nutral logo"
+          />
+          <div class="menu-pos">
+            <div class="menu-cont">
+              <a class="menu" href="#contact"
+                >Contact
+                <div class="arrow"></div
+              ></a>
+            </div>
+          </div>
+        </header>
+        <aside>
+          <h1 data-duration="1s" data-delay=".3s" class="title anim">
+            Hallo, ik ben Niels — <br />Een Digitale designer.
+          </h1>
+          <div class="flex-grid-cont">
+            <div class="item-1">
+              <a href="#cases">
+                <div data-duration=".5s" data-delay=".15s" class="anim">
+                  <h1>Werk</h1>
+                  <p>
+                    Bekijk de selectie van mijn cases voor een beeld van het
+                    proces en eindresultaat.
+                  </p>
+                </div>
+                <div class="arrow"></div>
+              </a>
+            </div>
+            <div class="item-2">
+              <a href="#services">
+                <div data-duration=".5s" data-delay=".15s" class="anim">
+                  <h1>Services</h1>
+                  <p>
+                    Goed geholpen worden. Directe en duidelijke dienstverlening.
+                  </p>
+                </div>
+                <div class="arrow"></div>
+              </a>
+            </div>
+          </div>
+        </aside>
+        <a class="herobtn" href="#services">
+          <div class="down-arrow"></div>
+        </a>
+      </section>
+      <section id="services" class="services">
+        <header>
+          <div data-duration=".5s" data-delay=".3s" class="header_title anim">
+            <h2>Services</h2>
+            <h1>
+              Volledige service rondom digitale mogelijkheden <br />
+              van begin tot eind.
+            </h1>
+          </div>
+          <div class="menu-pos">
+            <div class="menu-cont">
+              <a class="menu" href="#contact"
+                >Contact
+                <div class="arrow"></div>
+              </a>
+            </div>
+          </div>
+        </header>
+        <div class="service_cont">
+          <div data-duration=".5s" data-delay=".2s" class="ervaring anim">
+            <h2>Ervaring</h2>
+            <p>Advies, UI & UX design, websites, mobile apps en e-learning.</p>
+            <div class="arrow"></div>
+          </div>
+          <div data-duration=".5s" data-delay=".3s" class="campagnes anim">
+            <h2>Campagnes</h2>
+            <p>
+              Advies op maat over online ondernemen, identiteit ontwikkeling en
+              marketing.
+            </p>
+            <div class="arrow"></div>
+          </div>
+          <div data-duration=".5s" data-delay=".4s" class="studio anim">
+            <h2>Studio</h2>
+            <p>De ontwikkeling van een product dat bij uw bedrijf past.</p>
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </section>
+      <section class="projects">
+
+        <h1 class="title title-mg black">Cases</h1>
+  
+
+      <section id="cases" class="products">
+        <section
+          data-duration=".5s"
+          data-delay=".15s"
+          id="product"
+          class="product vsm anim"
+        >
+          <a href="/vsmautomatisering_detail.html">
+            <div class="product">
+              <h2>VSM Automatisering</h2>
+              <p>UX onderzoek en UI design</p>
+            </div>
+          </a>
+        </section>
+        <section data-duration=".5s" data-delay=".15s" class="product esp anim">
+          <a href="/esports_detail.html">
+            <div class="product">
+              <h2>E-Sports</h2>
+              <p>Logo's, twitch overlays en t-shirts</p>
+            </div>
+          </a>
+        </section>
+        <section
+          data-duration=".5s"
+          data-delay=".15s"
+          id="product"
+          class="product smc anim"
+        >
+          <a href="/smclaren_detail.html">
+            <div class="product">
+              <h2>SMCLaren</h2>
+              <p>Webdesign & front-end development</p>
+            </div>
+          </a>
+        </section>
+        <section
+          data-duration=".5s"
+          data-delay=".15s"
+          id="product"
+          class="product glc anim"
+        >
+          <a href="/goodlookingcooking_detail.html">
+            <div class="product">
+              <h2>Goodlooking Cooking</h2>
+              <p>Webdesign & front-end development</p>
+            </div>
+          </a>
+        </section>
+        <section
+          data-duration=".5s"
+          data-delay=".15s"
+          id="product"
+          class="product sns anim"
+        >
+          <a href="/snsbank_detail.html">
+            <div class="product">
+              <h2>SNS Bank</h2>
+              <p>E-Learning basis ontwerp en opzet</p>
+            </div>
+          </a>
+        </section>
+        <section
+          data-duration=".5s"
+          data-delay=".15s"
+          id="product"
+          class="product sns anim"
+        >
+          <a href="/dailyui_detail.html">
+            <div class="product">
+              <h2>Daily UI</h2>
+              <p>UI & UX Design trends oefenen</p>
+            </div>
+          </a>
+        </section>
+      </section>
+    </section>
+      <section id="contact" class="contact ">
+        <div class="contact-cont">
+          <h1 data-duration=".5s" data-delay=".15s" class="anim">
+            Kennismaken?
+          </h1>
+          <ul>
+            <li data-duration=".3s" data-delay=".15s" class="anim">
+              <a href="tel:+310624173831">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-phone"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li data-duration=".3s" data-delay=".2s" class="anim">
+              <a href="mailto:nutralmedia@gmail.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-mail"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </li>
+            <li data-duration=".3s" data-delay=".25s" class="anim">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/niels-de-bont-3169a185/"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-linkedin"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <a href="#hero" id="topBtn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-arrow-up"
+        >
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+
+    <div class="cursor"></div>
+    <script src="js/cursor.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/scroll.js"></script> -->
+  </body>
+</html>

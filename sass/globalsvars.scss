@@ -1,0 +1,94 @@
+// globals
+@font-face {
+  font-family: "Opensans";
+  font-style: normal;
+  src: url("../fonts/opensans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Freight Display Pro";
+  font-style: normal;
+  src: url("../fonts/freight/Freight\ Display\ Pro\ Light.otf")
+    format("truetype");
+}
+
+$xl: 1920px;
+$lg: 1280px;
+$md: 960px;
+$sm: 600px;
+$xs: 375px;
+$secundary-color: #f69c2a;
+
+$primary-color: #1e1f1f;
+$prim-color: rgba(14, 13, 15, 0.98);
+$overlay-color: rgb(14, 13, 15);
+// bg color
+$bg-color-main: #f6f6f6;
+$bg-section: #ffffff;
+$bg-menu: #f6f6f6;
+$bg-hero: #1e1f1f;
+$txt-hero: #f6f6f6;
+$fsize-hero: 3.8rem;
+$white: #fff;
+$hero-p: #ddd8c6;
+// menu vars
+$menu-border: 1px;
+$menu-speed: 0.75s;
+// hero vars
+$arrow-after-color: #be7601;
+$arrow-before-color: #f6f6f6;
+$font-os: "Open Sans", sans-serif;
+$font-fr: "Freight Display Pro", serif;
+$section-padding: 7.5em;
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: $bg-color-main;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* FONTS */
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: $font-os;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: $primary-color;
+}
+
+h2 {
+  font-size: 1rem;
+  font-family: $font-fr;
+  font-weight: 600;
+  color: $primary-color;
+}
+
+section.hero > header {
+  h1 {
+    color: $txt-hero;
+    font-size: $fsize-hero;
+    font-family: $font-os;
+  }
+}
