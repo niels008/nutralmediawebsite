@@ -640,6 +640,7 @@ section.products section.product > a {
 
 section.products section.product p {
   color: #f69c2a;
+  margin: 0.25rem 0;
 }
 
 section.products section.product:hover {
