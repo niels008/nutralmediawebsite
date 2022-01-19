@@ -1,3 +1,4 @@
+@import "./colors.scss";
 // globals
 @font-face {
   font-family: "Opensans";
@@ -17,31 +18,45 @@ $lg: 1280px;
 $md: 960px;
 $sm: 600px;
 $xs: 375px;
-$secundary-color: #f69c2a;
 
 $primary-color: #1e1f1f;
 $prim-color: rgba(14, 13, 15, 0.98);
 $overlay-color: rgb(14, 13, 15);
 // bg color
-$bg-color-main: #f6f6f6;
-$bg-section: #ffffff;
-$bg-menu: #f6f6f6;
-$bg-hero: #1e1f1f;
-$txt-hero: #f6f6f6;
-$fsize-hero: 3.8rem;
-$white: #fff;
-$hero-p: #ddd8c6;
+
 // menu vars
 $menu-border: 1px;
 $menu-speed: 0.75s;
 // hero vars
-$arrow-after-color: #be7601;
-$arrow-before-color: #f6f6f6;
+
 $font-os: "Open Sans", sans-serif;
 $font-fr: "Freight Display Pro", serif;
 $section-padding: 7.5em;
 
-* {
+%title-900 {
+  color: $txt-hero;
+  font-size: $fsize-hero;
+  font-family: $font-os;
+}
+
+%title-800 {
+  font-size: 2rem;
+  font-family: $font-os;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: $primary-color;
+}
+
+%title-700 {
+  font-size: 1rem;
+  font-family: $font-fr;
+  font-weight: 600;
+  color: $primary-color;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 html {
@@ -71,24 +86,15 @@ h2 {
 }
 
 h1 {
-  font-size: 2rem;
-  font-family: $font-os;
-  letter-spacing: 0.05em;
-  font-weight: 600;
-  color: $primary-color;
+  @extend %title-800;
 }
 
 h2 {
-  font-size: 1rem;
-  font-family: $font-fr;
-  font-weight: 600;
-  color: $primary-color;
+  @extend %title-700;
 }
 
 section.hero > header {
   h1 {
-    color: $txt-hero;
-    font-size: $fsize-hero;
-    font-family: $font-os;
+    @extend %title-900;
   }
 }

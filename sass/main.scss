@@ -143,7 +143,7 @@ section.services {
       font-size: 0.8em;
       letter-spacing: 0.2em;
       font-family: $font-os;
-      color: $hero-p;
+      color: $secundary-color;
       margin-bottom: 1em;
     }
   }
@@ -208,7 +208,7 @@ section.services {
   }
   div.campagnes,
   div.studio,
-  div.ervaring {
+  div.experience {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -437,7 +437,6 @@ section.contact {
   div.contact-cont {
     transition: 1s;
     width: 100%;
-    padding: 10px;
     background: $primary-color;
     left: 0;
     flex-direction: column;
@@ -485,6 +484,7 @@ section.contact {
     }
   }
 }
+
 section.about {
   display: grid;
   height: calc(100vh - 1em);
@@ -604,27 +604,32 @@ section.hero {
     justify-content: space-between;
     align-items: flex-end;
     color: $white;
+
     @media (max-width: $lg) {
       flex-direction: column;
     }
     .flex-grid-cont {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+
       @media (max-width: $sm) {
         grid-template-columns: none;
         grid-template-rows: repeat(2, 1fr);
         margin: 1rem 0 0 0;
+        display: flex;
+        flex-direction: column;
       }
       margin: 1rem;
       grid-gap: 1rem;
     }
     div.arrow {
       opacity: 0;
+
       &:before {
         width: 1rem;
       }
     }
-    [class*="item-"] {
+    [class*="item"] {
       max-width: 300px;
       flex: 1;
 
@@ -632,25 +637,39 @@ section.hero {
       flex-direction: column;
       justify-content: space-between;
       transition: 0.6s;
+      @media (max-width: $sm) {
+        flex: 1;
+      }
       &:hover {
         div.arrow {
           opacity: 100;
         }
+
         div.arrow:before {
           border: solid 1px $secundary-color;
           background-color: $secundary-color;
         }
+
         div.arrow:after {
           border-top: solid 2px $secundary-color;
           border-right: solid 2px $secundary-color;
         }
       }
+
       > a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         text-decoration: none;
         height: 100%;
+
+        > div {
+          @media (max-width: $sm) {
+            flex: 1;
+            width: 100%;
+          }
+        }
+
         .arrow {
           justify-self: flex-end;
           align-self: flex-end;
@@ -659,6 +678,7 @@ section.hero {
           }
         }
       }
+
       h1 {
         font-family: $font-fr;
         color: $white;
@@ -990,31 +1010,21 @@ section.detail {
   z-index: 1;
 }
 .cursor {
-  width: 20px;
-  height: 20px;
-  border: solid 2px white;
+  width: 35px;
+  height: 35px;
+  border: solid 1px white;
   border-radius: 50%;
-  position: absolute;
+  left: 0;
+  top: 0;
+  position: fixed;
   pointer-events: none;
   z-index: 999;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.952);
   transition-duration: 300ms;
   transition-timing-function: ease;
   animation: cursorAnim 1s infinite alternate;
   @media (max-width: $sm) {
     display: none;
-  }
-  &:after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    border: 8px solid gray;
-    border-radius: 50%;
-    opacity: 0.3;
-    top: -10px;
-    left: -10px;
-    animation: cursorAnim2 1s infinite alternate;
   }
 }
 @keyframes cursorAnim {
@@ -1022,7 +1032,7 @@ section.detail {
     transform: scale(1);
   }
   to {
-    transform: scale(0.7);
+    transform: scale(0.9);
   }
 }
 @keyframes cursorAnim2 {
@@ -1048,7 +1058,7 @@ section.detail {
 .expand-cursor {
   animation: cursorAnim3 0.5s forwards;
   border: solid 1px $secundary-color;
-  position: absolute;
+  position: fixed;
 }
 #topBtn {
   display: flex;

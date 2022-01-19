@@ -10,7 +10,30 @@
   src: url("../fonts/freight/Freight Display Pro Light.otf") format("truetype");
 }
 
-* {
+section.hero > header h1 {
+  color: #f6f6f6;
+  font-size: 3.8rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: #1e1f1f;
+}
+
+h2 {
+  font-size: 1rem;
+  font-family: "Freight Display Pro", serif;
+  font-weight: 600;
+  color: #1e1f1f;
+}
+
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -45,26 +68,5 @@ h1,
 h2 {
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  font-size: 2rem;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0.05em;
-  font-weight: 600;
-  color: #1e1f1f;
-}
-
-h2 {
-  font-size: 1rem;
-  font-family: "Freight Display Pro", serif;
-  font-weight: 600;
-  color: #1e1f1f;
-}
-
-section.hero > header h1 {
-  color: #f6f6f6;
-  font-size: 3.8rem;
-  font-family: "Open Sans", sans-serif;
 }
 /*# sourceMappingURL=globalsvars.css.map */
